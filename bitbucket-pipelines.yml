@@ -1,0 +1,13 @@
+image: php:7.1.1
+clone:
+  depth: 1
+
+pipelines:
+  default:
+    - step:
+        script:
+          - apt-get update && apt-get upgrade -y
+          - apt-get install git -y
+          - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+          - pear install pear/PHP_CodeSniffer
+          - composer require phpunit/phpunit

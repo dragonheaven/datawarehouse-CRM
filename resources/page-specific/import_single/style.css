@@ -1,0 +1,44 @@
+.panel-footer {
+	background: rgba( 0,0,0,0 );
+}
+
+table.table {
+	margin-bottom: 0;
+}
+
+.form-control,
+.btn-default,
+.chosen-container-single .chosen-single,
+.input-group-addon {
+    background: rgba(0,
+        0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    color: #fff;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    -webkit-appearance: none;
+    height: 32px;
+    font-size: 12px;
+}
+
+.btn {
+	height: 33px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.btn.btn-xs {
+	height: 22px;
+	font-weight: 300;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background-color: rgba( 255,255,255,0.2 );
+}
+
+select.form-control {
+	height: 33px;
+	line-height: 20px;
+}

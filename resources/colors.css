@@ -1,0 +1,104 @@
+.form-control,
+.btn-default,
+.chosen-container-single .chosen-single,
+.input-group-addon {
+    background: rgba(0,0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+    color: #fff;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    -webkit-appearance: none;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+	color: #FFD600;
+	border-color: #FFD600;
+	background: rgba( 0,0,0,0.65 );
+	background-color: rgba( 0,0,0,0.65 );
+
+}
+
+.form-control,
+.chosen-container-single .chosen-single,
+.btn,
+.input-group-addon {
+	height: 32px;
+}
+
+.btn-xs {
+	height: 20px;
+	line-height: 18px;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background-color: rgba( 255,255,255,0.2 );
+}
+
+select.form-control {
+	height: 33px;
+	line-height: 20px;
+}
+
+.email-color {
+	background-color: #E9C985;
+}
+
+.phone-color {
+	background-color: #24CF3C;
+}
+
+.sms-color {
+	background-color: #4CB7F8;
+}
+
+.skype-color {
+	background-color: #1EADE9;
+}
+
+.whatsapp-color {
+	background-color: #55C863;
+}
+
+.facebook-color {
+	background-color: #1775FB;
+}
+
+.linkedin-color {
+	background-color: #0077B5;
+}
+
+.google-color {
+	background-color: #DC4A38;
+}
+
+.twitter-color {
+	background-color: #2BA8E0;
+}
+
+.rss-color {
+	background-color: #EFAF27;
+}
+
+.risk-color {
+	background-color: #662630 !important;
+	background: #662630 !important;
+}
+
+.phone-atts-box.phone-type {
+	background: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone-type-landline_or_mobile,
+.phone-type-landline {
+	background-image: url( /resources/images/landline.png?v1 ) !important;
+}
+
+.phone-type-mobile {
+	background-image: url( /resources/images/mobile.png?v1 ) !important;
+}

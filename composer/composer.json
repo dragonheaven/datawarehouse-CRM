@@ -1,0 +1,10 @@
+{
+	"name": "tacticlicks/datawarehouse",
+	"description": "Tacticlicks Lead Data Warehouse",
+	"require": {
+		"giggsey/libphonenumber-for-php": "^7.2",
+		"wisembly/elephant.io": "^3.2",
+		"pear/net_dns2": "^1.4",
+		"whatsapp/chat-api": "v3.2.0.1"
+	}
+}

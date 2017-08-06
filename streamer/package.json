@@ -1,0 +1,11 @@
+{
+  "name": "tc-data-warehouse-streamer",
+  "version": "0.0.1",
+  "description": "Streamer for Tacticlicks Lead Data Warehouse",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "~4.10.2",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "~1.4.4"
+  }
+}

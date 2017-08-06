@@ -1,0 +1,226 @@
+.filedropzone input[type="file"] {
+	display: none;
+}
+
+.m-t-15 {
+	margin-top: 15px;
+}
+
+/**
+-webkit-filter: blur(5px);
+filter: blur(5px);
+**/
+
+body.dragging #left-nav,
+body.dragging #left-nav-secondary,
+body.dragging #content>header,
+body.dragging #content>div.row,
+body.dragging #content>div.block-area,
+body.dragging #content .btn-group {
+	-webkit-filter: blur( 5px );
+	filter: blur( 5px );
+}
+
+body.dragging #content>div:nth-of-type(2).block-area {
+	-webkit-filter: none;
+	filter: none;
+}
+
+body.dragging #content>div:nth-of-type(2).block-area .tile {
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8);
+}
+
+body.dragging #content>div:nth-of-type(2).block-area .filedropzone {
+	border: dashed 3px rgba( 255,255,255,0.5 );
+}
+
+body.dragging #content>div:nth-of-type(2).block-area .filedropzone .tile-title {
+	opacity: 0;
+}
+
+.beating {
+	/** animation: heartbeat 10s infinite; */
+}
+
+#d-a-d-text.beating {
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFF;
+}
+
+.filedropzone ul {
+	list-style-type: none;
+	padding: 0;
+	height: 250px;
+	overflow-y: auto;
+}
+
+.filedropzone ul>li>a {
+	display: block;
+	height: 50px;
+	line-height: 48px;
+	padding: 0px 15px;
+	border-top: solid 1px rgba( 255,255,255,0.3 );
+}
+
+.filedropzone ul>li:first-child>a {
+	border-top: none;
+	white-space: pre;
+}
+
+.filedropzone ul>li:nth-child(even)>a {
+	background: rgba( 0,0,0,0.2 );
+}
+
+.filedropzone ul>li>a:hover,
+.filedropzone ul>li>a:active,
+.filedropzone ul>li>a:focus {
+	background: rgba( 0,0,0,0.35 );
+}
+
+.filedropzone ul>li>.progress {
+	height: 49px;
+}
+
+.filedropzone ul>li>.file-name {
+	position: relative;
+	height: 25px;
+	bottom: 25px;
+	background: rgba( 0,0,0,0.35 );
+	color: #FFF;
+	margin-bottom: -25px;
+	display: block;
+	padding: 0px 15px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.filedropzone ul>li>.file-name a.text-danger {
+	color: #dd0d0d;
+}
+
+.graph-div {
+	height: 250px;
+}
+
+.tile-title {
+	margin-bottom: -1px;
+}
+
+.table-responsive {
+	height: 350px;
+	overflow-y: auto;
+}
+
+table.table {
+	margin-bottom: 0;
+}
+
+li.loader {
+	height: 250px;
+	line-height: 250px;
+	padding-top: 75px;
+}
+
+td.loader {
+	height: 325px;
+	line-height: 325px;
+	vertical-align: middle;
+}
+
+td.loader>main {
+	margin-top: 100px;
+}
+
+.block-area table.table .btn {
+	height: 30px;
+	text-transform: uppercase;
+}
+
+.block-area table.table td:not(.loader) {
+	line-height: 30px;
+	white-space: pre;
+}
+
+.block-area table.table td .label.label-default {
+	background: rgba( 0, 0, 0, 0.05 );
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    color: #fff;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    -webkit-appearance: none;
+    height: 32px;
+    font-size: 12px;
+}
+
+.mass-upload-file-action-check {
+	margin-right: 15px;
+}
+
+.tile-config > .tile-menu {
+	background-image: none;
+}
+
+.tile-config > .tile-menu:after {
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f141";
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 25px;
+}
+
+.dropdown-menu, .elfinder-button-menu, .elfinder-contextmenu {
+	background: rgba( 0,0,0,0.55 );
+	background-color: rgba( 0,0,0,0.55 );
+	color: rgba( 255,255,255,0.85 );
+}
+
+.dropdown-menu > li > a {
+	color: rgba( 255,255,255,0.85 );
+}
+
+.dropdown-menu > li:hover > a,
+.dropdown-menu > li:focus > a,
+.dropdown-menu > li:active > a {
+	background: rgba( 0,0,0,0.75 );
+	background-color: rgba( 0,0,0,0.75 );
+	color: rgba( 255,255,255,0.85 );
+}
+
+#check-all-delete-boxes {
+	margin:0;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale( .75);
+  }
+  20% {
+    transform: scale( 1);
+  }
+  40% {
+    transform: scale( .75);
+  }
+  60% {
+    transform: scale( 1);
+  }
+  80% {
+    transform: scale( .75);
+  }
+  100% {
+    transform: scale( .75);
+  }
+}
+
+@media( min-width: 768px ) {
+	.block-area table.table .btn {
+		padding: 0px 15px;
+	}
+}

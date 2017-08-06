@@ -1,0 +1,25 @@
+tr.loader .progress {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 20px;
+}
+
+tr.loader .progress .percent {
+	line-height: 18px;
+}
+
+.gauge-value {
+	float: left;
+	position: relative;
+	height: 22px;
+	margin-bottom: -22px;
+	bottom: 91px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+}
+
+.side-border {
+	overflow-x: hidden;
+}

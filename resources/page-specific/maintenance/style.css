@@ -1,0 +1,14 @@
+#left-nav,
+#left-nav-secondary,
+header {
+	display: none;
+}
+
+#content,
+footer {
+	left: 0px;
+}
+
+#mm-container {
+	margin-top: 50px;
+}

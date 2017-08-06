@@ -1,0 +1,331 @@
+[
+    {
+        "name": "giggsey/libphonenumber-for-php",
+        "version": "7.7.5",
+        "version_normalized": "7.7.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+            "reference": "7137cef7f295d225aec2a290f6829c1c71a1ffb0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/7137cef7f295d225aec2a290f6829c1c71a1ffb0",
+            "reference": "7137cef7f295d225aec2a290f6829c1c71a1ffb0",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "giggsey/locale": "^1.0",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "pear/pear-core-minimal": "^1.9",
+            "pear/pear_exception": "^1.0",
+            "pear/versioncontrol_git": "dev-master",
+            "phing/phing": "^2.7",
+            "phpunit/phpunit": "^4.8|^5.0",
+            "satooshi/php-coveralls": "^1.0",
+            "symfony/console": "^2.8|^3.0"
+        },
+        "time": "2016-11-23 15:39:02",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "7.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "libphonenumber": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Joshua Gigg",
+                "email": "giggsey@gmail.com",
+                "homepage": "http://giggsey.com/"
+            }
+        ],
+        "description": "PHP Port of Google's libphonenumber",
+        "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+        "keywords": [
+            "geocoding",
+            "geolocation",
+            "libphonenumber",
+            "mobile",
+            "phonenumber",
+            "validation"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-10 12:19:37",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "wisembly/elephant.io",
+        "version": "v3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wisembly/elephant.io.git",
+            "reference": "e08dfbf261b759e76ebe403aeed0e4a50b613c7e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Wisembly/elephant.io/zipball/e08dfbf261b759e76ebe403aeed0e4a50b613c7e",
+            "reference": "e08dfbf261b759e76ebe403aeed0e4a50b613c7e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/log": "~1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-10-25 07:52:01",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ElephantIO\\": [
+                    "src/",
+                    "test/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Baptiste Clavié",
+                "email": "baptiste@wisembly.com",
+                "homepage": "http://baptiste.xn--clavi-fsa.net/",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Guillaume Potier",
+                "email": "guillaume@wisembly.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Ludovic Barreca",
+                "email": "ludogp2@gmail.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Elephant.IO Community",
+                "role": "Contributors :)"
+            }
+        ],
+        "description": "Send events to a websocket real time engine though PHP",
+        "homepage": "http://elephant.io",
+        "keywords": [
+            "dialog",
+            "nodejs",
+            "real time",
+            "websocket"
+        ]
+    },
+    {
+        "name": "pear/net_dns2",
+        "version": "v1.4.3",
+        "version_normalized": "1.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mikepultz/netdns2.git",
+            "reference": "24c84c98c8a85a1f3b6aa9b17df60d32a2d254e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/24c84c98c8a85a1f3b6aa9b17df60d32a2d254e9",
+            "reference": "24c84c98c8a85a1f3b6aa9b17df60d32a2d254e9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.1.2"
+        },
+        "time": "2017-02-12 21:14:52",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Net_DNS2": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mike Pultz",
+                "email": "mike@mikepultz.com",
+                "homepage": "https://mikepultz.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Native PHP5 DNS Resolver and Updater Library",
+        "homepage": "https://netdns2.com/",
+        "keywords": [
+            "PEAR",
+            "dns",
+            "network"
+        ]
+    },
+    {
+        "name": "giggsey/locale",
+        "version": "1.3",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/giggsey/Locale.git",
+            "reference": "e6eb1883c1452df7734a03fb183a2ec5175c16f2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6eb1883c1452df7734a03fb183a2ec5175c16f2",
+            "reference": "e6eb1883c1452df7734a03fb183a2ec5175c16f2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "pear/pear-core-minimal": "^1.9",
+            "pear/pear_exception": "^1.0",
+            "pear/versioncontrol_git": "dev-master",
+            "phing/phing": "~2.7",
+            "phpunit/phpunit": "^4.8|^5.0",
+            "satooshi/php-coveralls": "^1.0",
+            "symfony/console": "^2.8|^3.0",
+            "symfony/filesystem": "^2.8|^3.0",
+            "symfony/finder": "^2.8|^3.0",
+            "symfony/process": "^2.8|^3.0"
+        },
+        "time": "2017-04-07 18:45:42",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Giggsey\\Locale\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Joshua Gigg",
+                "email": "giggsey@gmail.com",
+                "homepage": "http://giggsey.com/"
+            }
+        ],
+        "description": "Locale functions required by libphonenumber-for-php"
+    },
+    {
+        "name": "whatsapp/chat-api",
+        "version": "v3.2.0.1",
+        "version_normalized": "3.2.0.1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mgp25/Chat-API.git",
+            "reference": "c72cad156c9d9ce7953439c089474a7a7320906d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mgp25/Chat-API/zipball/c72cad156c9d9ce7953439c089474a7a7320906d",
+            "reference": "c72cad156c9d9ce7953439c089474a7a7320906d",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-gd": "*",
+            "ext-mcrypt": "*",
+            "ext-openssl": "*",
+            "ext-pdo": "*",
+            "ext-sockets": "*",
+            "ext-sqlite3": "*",
+            "php": ">=5.6"
+        },
+        "time": "2016-07-02 12:03:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0+"
+        ],
+        "authors": [
+            {
+                "name": "Chat API Contributing Team",
+                "homepage": "https://github.com/mgp25/Chat-API/graphs/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "The PHP WhatsApp library",
+        "keywords": [
+            "Chat-API",
+            "whatsapi",
+            "whatsapp"
+        ]
+    }
+]
