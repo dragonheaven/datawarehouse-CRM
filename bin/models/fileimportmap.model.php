@@ -13,9 +13,7 @@
 			return $return;
 		}
 
-		public function getFileRows( $rowsToLoad = 'all', $rowOffset = 0 ) {
-			return tc_load_csv_file( $this->file, $this->delimiter, $this->encapsulation, $rowsToLoad, $rowOffset );
-		}
+		
 
 		public function fileimportjobs() {
 			try {
