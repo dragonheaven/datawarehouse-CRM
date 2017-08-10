@@ -21,6 +21,7 @@
                     $this->dom->preserveWhiteSpace = false;
                 }
                 $this->finder = new DOMXPath( $this->dom );
+                $node = $this->finder->query('//a');
             }
         }
 
