@@ -102,6 +102,12 @@
 					$this->addToPropertySharedList( 'phone', $obj );
 				}
 			}
+			
+			if ( can_loop( $lines ) ) {
+				foreach ( $lines as $obj ) {
+					$this->addToPropertySharedList( 'lines', $obj );
+				}
+			}
 			if ( can_loop( $emails ) ) {
 				foreach ( $emails as $obj ) {
 					$this->addToPropertySharedList( 'email', $obj );
