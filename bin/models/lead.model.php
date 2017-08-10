@@ -54,9 +54,6 @@
 										$bean = R::dispense( $key );
 										$bean->import( $array );
 										array_push( $nv, $bean );
-										if ( isset( ${ $mulipleKey } ) && is_array( ${ $mulipleKey } ) ) {
-											array_push( ${ $mulipleKey }, $bean );
-										}
 									}
 								}
 								$value = $nv;
