@@ -189,6 +189,7 @@
 					html_failure( 'error', 'Missing Framework Requirement', array(
 						sprintf( '"%s" is not a "%s"', $req, $reqtype ),
 					), 500 );
+					
 				}
 			}
 		}
