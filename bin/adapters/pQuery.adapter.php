@@ -1,6 +1,7 @@
 <?php
     defined( 'ABSPATH' ) || die( 'Sorry, but you cannot access this page directly.' );
 
+    // To traverse HTML Markup
     class pQuery {
         private $doc_url = '';
         private $dom = NULL;
@@ -25,7 +26,7 @@
 
         public function find( $query ) {
             if ( preg_match( '^\#', $query ) ) {
-
+                return;
             }
 
             $container_list = $this->finder->query( '//a' );
