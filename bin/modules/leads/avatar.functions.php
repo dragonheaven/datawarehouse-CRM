@@ -40,7 +40,6 @@
                         if ( ! is_default_image( $image ) ) {
                             //reduce size to default size 100X100
                             $image = do_default_image( $image );
-                            $lead->profile_image = base64_encode( $image );
                         }
                     }
                     else {
