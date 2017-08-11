@@ -18,7 +18,6 @@
                 if ( 200 == $response->code ) {
                     $this->dom = new DOMDocument();
                     $this->dom->loadHTML( $response->data->contents );
-                    $this->dom->preserveWhiteSpace = false;
                 }
             }
         }
