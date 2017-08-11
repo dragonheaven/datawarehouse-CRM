@@ -97,10 +97,3 @@
         }
         return false;
     }
-
-    function is_image( $input ) {
-        if ( is_array( getimagesizefromstring( $input ) ) ) {
-            return true;
-        }
-        return false;
-    }
