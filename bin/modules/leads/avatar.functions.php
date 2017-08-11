@@ -26,10 +26,6 @@
                             $lead->profile_image = null;
                         }
                     }
-                    else {
-                        $lead->profile_image = null;
-                    }
-
                     R::store( $lead );
                 }
                 else {
@@ -42,9 +38,7 @@
                             $image = do_default_image( $image );
                         }
                     }
-                    else {
-                        cli_echo( sprintf('PHP GD library is not installed. Please installed and enable it.') );
-                    }
+                    
                     R::store( $lead );
                 }
             }
