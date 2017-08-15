@@ -48,7 +48,6 @@
         $return = null;
         // Craft a potential url and test its headers
         $hash = md5(strtolower(trim($email)));
-        //$url = 'http://www.gravatar.com/avatar/' . $hash . '?d=404'.'&s=100';
         $url = sprintf( 'http://www.gravatar.com/avatar/%s?d=%d&s=%d', $hash, 404, 100 );
 
         $response = HTTP_REQUEST::GET( $url );
