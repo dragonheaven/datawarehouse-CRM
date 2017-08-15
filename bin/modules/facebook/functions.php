@@ -5,11 +5,6 @@
         if ( is_cli() && beginning_matches( '/facebook/', $path ) ) {
             $action = filter_facebook_action( $path );
             switch ( $action ) {
-                case 'test':
-                    //$res = streamer_emit( 'test', $query );
-                    test();
-                    cli_success( null, 'Websocket Test Completed Successfully.' );
-                    break;
                 case 'search-facebook-profile':
                     tc_search_facebook_profile();
                     cli_success( null, 'Websocket Action Completed Successfully.' );
