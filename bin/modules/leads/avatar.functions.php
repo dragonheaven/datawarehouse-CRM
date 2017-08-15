@@ -22,9 +22,6 @@
                         if ( ! is_empty( $image ) ) {
                             $lead->profile_image = base64_encode( $image );
                         }
-                        else {
-                            $lead->profile_image = null;
-                        }
                     }
                     R::store( $lead );
                 }
