@@ -25,6 +25,8 @@
                         else {
                             $lead->profile_image = null;
                         }
+                    } else {
+                        $lead->profile_image = null;
                     }
                     R::store( $lead );
                 }
