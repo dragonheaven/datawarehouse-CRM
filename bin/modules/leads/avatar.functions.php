@@ -45,7 +45,6 @@
     // Get gravatar image by email. $return or null
     function tc_get_gravatar_by_email( $email ) {
         cli_echo( sprintf( 'Getting gravatar for "%s"', $email ) );
-        $return = null;
         // Craft a potential url and test its headers
         $hash = md5(strtolower(trim($email)));
         $url = sprintf( 'http://www.gravatar.com/avatar/%s?d=%d&s=%d', $hash, 404, 100 );
