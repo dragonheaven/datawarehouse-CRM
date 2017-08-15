@@ -73,7 +73,7 @@
     function do_default_image( $ori_image ) {
         if ( ! is_image( $ori_image ) ) {
             return null;
-        }
+        } else {
 
         $default_width = 100;
         $default_height = 100;
@@ -81,6 +81,7 @@
         $image_p = imagecreatetruecolor( $default_width, $default_height );
         $new_image = imagecreatefromstring( $ori_image );
         imagecopyresampled( $image_p, $new_image, 0, 0, 0, 0, $default_width, $default_height, $ori_width, $ori_height );
+        }
 
         return $image_p;
     }
