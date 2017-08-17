@@ -37,6 +37,7 @@ child.stdout.on( 'data', function( data ) {
 
 setInterval( function() {
 	var c = spawn( 'pgrep', [ '-c', 'php' ] );
+	var arr = data.toString().split( "\r\n" );
 	c.stdout.on( 'data', function( data ) {
 		phpthreads = parseInt( data );
 		lastfiftyphpthreads.push([getJsTimestamp(),phpthreads]);
