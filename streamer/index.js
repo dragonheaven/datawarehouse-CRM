@@ -83,6 +83,7 @@ io.on( 'connection', function( socket ) {
 	socket.on('import-stats', function (data) {
 		socket.broadcast.emit( 'update', { 'import-stats': data } );
 		uh['import-stats'] = data;
+		addGraphPoint( 'leads', data.allLeadCount );
 	});
 	socket.on('lead-stats', function (data) {
 		socket.broadcast.emit( 'update', { 'lead-stats': data } );
