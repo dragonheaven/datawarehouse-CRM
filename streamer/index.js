@@ -3,6 +3,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var cp = require ('child_process');
 var fs = require('fs');
+var bodyParser = require('body_parser');
 var spawn = cp.spawn;
 var uh = {};
 var graphdata = {};
