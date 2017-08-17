@@ -2,6 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var cp = require ('child_process');
+var fs = require('fs');
 var spawn = cp.spawn;
 var uh = {};
 var graphdata = {};
