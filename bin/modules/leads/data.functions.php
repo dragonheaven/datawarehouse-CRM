@@ -44,7 +44,7 @@
 				break;
 
 			case 'source':
-				$return = str_repeat( 's', 256 );
+				$return = str_repeat( 's', 1024 );
 				break;
 
 			default:
