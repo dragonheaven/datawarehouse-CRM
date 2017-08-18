@@ -32,7 +32,7 @@
 				break;
 
 			case 'fname':
-				$return = str_repeat( 's', 256 );
+				$return = str_repeat( 's', 128 );
 				break;
 
 			case 'mname':
