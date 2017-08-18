@@ -28,7 +28,7 @@
 				break;
 
 			case 'email':
-				$return = str_repeat( 's', 256 );
+				$return = str_repeat( 's', 64 );
 				break;
 
 			case 'fname':
