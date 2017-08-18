@@ -40,7 +40,7 @@
 				break;
 
 			case 'lname':
-				$return = str_repeat( 's', 256 );
+				$return = str_repeat( 's', 512 );
 				break;
 
 			case 'source':
