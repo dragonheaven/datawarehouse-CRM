@@ -52,12 +52,6 @@
 			$destroy = array(
 				'fileimportmap',
 			);
-			foreach ( $destroy as $d ) {
-				$dls = R::findAll( $d );
-				foreach ( $dls as $dl ) {
-					R::trash( $dl );
-				}
-			}
 			cli_success( null, 'Successfully Reset Objects' );
 		}
 		if ( is_cli() && beginning_matches( '/reset-all-imports/', $path ) ) {
