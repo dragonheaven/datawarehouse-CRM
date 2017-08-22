@@ -26,7 +26,6 @@
 			R::nuke();
 			if ( class_exists( 'Memcached' ) ) {
 				cli_echo( 'Clearing Memcached' );
-				$r = cache_flush();
 				cli_echo( ( true == $r ) ? 'Successfully Flushed Memcached' : 'Failed to flush Memcached' );
 			}
 			if ( file_exists( get_current_user_file_upload_path() ) ) {
