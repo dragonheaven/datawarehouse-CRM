@@ -31,15 +31,15 @@
 			}
 			if ( file_exists( get_current_user_file_upload_path() ) ) {
 				$f = scandir( get_current_user_file_upload_path() );
-// 				if ( can_loop( $f ) ) {
-// 					cli_echo( 'Clearing Files' );
-// 					foreach ( $f as $file ) {
-// 						if ( ! in_array( $file, array( '.', '..', 'index.php' ) ) ) {
-// 							$del = unlink( sprintf( '%s%s', get_current_user_file_upload_path(), $file ) );
-// 							cli_echo( ( true == $del ) ? sprintf( 'Successfully Deleted File "%s"', $file ) : sprintf( 'Failed to Delete "%s"', $file ) );
-// 						}
-// 					}
-// 				}
+				if ( can_loop( $f ) ) {
+					cli_echo( 'Clearing Files' );
+					foreach ( $f as $file ) {
+						if ( ! in_array( $file, array( '.', '..', 'index.php' ) ) ) {
+							$del = unlink( sprintf( '%s%s', get_current_user_file_upload_path(), $file ) );
+							cli_echo( ( true == $del ) ? sprintf( 'Successfully Deleted File "%s"', $file ) : sprintf( 'Failed to Delete "%s"', $file ) );
+						}
+					}
+				}
 			}
 			if ( function_exists( 'opcache_reset' ) ) {
 				cli_echo( 'Resetting Opcache' );
