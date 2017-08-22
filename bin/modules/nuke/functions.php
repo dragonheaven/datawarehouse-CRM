@@ -51,7 +51,6 @@
 		if ( is_cli() && beginning_matches( '/reset-objects/', $path ) ) {
 			$destroy = array(
 				'fileimportmap',
-				'fileimportjobs',
 			);
 			foreach ( $destroy as $d ) {
 				$dls = R::findAll( $d );
