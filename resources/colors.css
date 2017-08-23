@@ -2,7 +2,6 @@
 .btn-default,
 .chosen-container-single .chosen-single,
 .input-group-addon {
-    background: rgba(0,0, 0, 0.05);
     text-shadow: none;
     color: #fff;
     box-shadow: none;
